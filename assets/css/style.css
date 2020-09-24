@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*fin reset css*/
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+/* Navigation en haut*/
+nav
+{
+    background-color: rgb(118, 109, 74);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav img 
+{
+    margin: auto;
+    width: 10%;
+}
+
+nav ul
+{
+    list-style: none;
+    margin: auto;
+    margin-right: 150px;
+    height: 100%;
+}
+nav li
+{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+header
+{  
+    background-image: url("../img/TableBois.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+header img
+{
+    width: 12%;
+}
+
+header h1
+{
+    color: white;
+    position: left;
+    flex: auto;
+}
+
+header button /*Bouton Book now*/
+{
+    background-color: rgb(206, 151, 68);
+    border: solid 1px;
+    background-size: cover;
+    text-align: center;
+    width: auto;
+    float: right;
+    padding: 5px;
+}
+header h1
+{
+    font-size: 90px;
+}
+.AboutUs
+{
+    background-color: rgb(206, 151, 68);
+    text-align: center;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.AboutUs h2
+{
+    font-size: 50px;
+    color: white;
+    align-items: center;
+}
+.AboutUs p
+{
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ContactUs
+{
+    background-color:rgb(118, 109, 74);
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+.ContactUs button /*Bouton Contact Us!*/
+{
+    background-color: rgb(206, 151, 68);
+    border: solid 1px;
+    background-size: cover;
+    text-align: center;
+    padding: 5px;
+    width: auto;
+
+}
+.ContactUs-Text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ContactUs h2
+{
+    font-size: 45px;
+}
+
+.GoldenDishes
+{
+    background-color: rgb(206, 151, 68);
+}
+
+.GoldenDishes h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+}
+
+.PetitsPlats
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.TextePetitPlats
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 35px;
+}
