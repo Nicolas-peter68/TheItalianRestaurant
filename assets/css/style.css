@@ -52,39 +52,43 @@ table {
     box-sizing: border-box;
 }
 /* Navigation en haut*/
-nav
+.TopBar
 {
     background-color: rgb(118, 109, 74);
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
+    align-content: center;
+    padding: 20px;
 }
 
-nav img 
+.TopBar img 
 {
     margin: auto;
-    width: 10%;
+    width: 300px;
 }
 
-nav ul
+.TopBar ul
 {
     list-style: none;
     margin: auto;
     margin-right: 150px;
-    height: 100%;
+
 }
-nav li
+.TopBar li
 {
     display: inline-block;
     width: 100px;
     text-align: center;
     color: white;
+    font-size: 20px;
 }
 
 header
 {  
     background-image: url("../img/TableBois.png");
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(255,255,255,0)); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -93,6 +97,7 @@ header
     align-items: flex-end;
     justify-content: space-between;
     padding-bottom: 50px;
+    position: relative;
 }
 
 header img
@@ -105,6 +110,7 @@ header h1
     color: white;
     position: left;
     flex: auto;
+    padding-left: 50px;
 }
 
 header button /*Bouton Book now*/
@@ -116,6 +122,8 @@ header button /*Bouton Book now*/
     width: auto;
     float: right;
     padding: 5px;
+    font-size: 32px;
+    color: white;
 }
 header h1
 {
@@ -123,7 +131,12 @@ header h1
 }
 .AboutUs
 {
-    background-color: rgb(206, 151, 68);
+    background: rgb(206, 151, 68);
+    background-image: url('../img/Choux.png'); 
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -40%;
     text-align: center;
     background-size: auto;
     display: flex;
@@ -151,7 +164,9 @@ header h1
     background-color:rgb(118, 109, 74);
     color: white;
     display: flex;
-    padding: 20px;
+    padding: 100px;
+    height: 100vh;
+    width: fit-content;
 }
 .ContactUs button /*Bouton Contact Us!*/
 {
@@ -160,14 +175,21 @@ header h1
     background-size: cover;
     text-align: center;
     padding: 5px;
-    width: min-content;
-
+    width: max-content;
+    font-size: 30px;
 }
 .ContactUs-Text
 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.ContactUs img
+{
+    width: 100%;
 }
 
 .ContactUs h2
@@ -179,6 +201,11 @@ header h1
 {
     background-color: rgb(206, 151, 68);
     min-height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .GoldenDishes h2
@@ -210,34 +237,43 @@ header h1
 .Discount
 {
     background-color: rgb(206, 151, 68);
+    background-image: url("../img/Salade.png");
+    background-position: 140%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-
+    align-items: flex-start;
+    justify-content: space-around;
+    min-height: 100vh;
 }
 
 .Discount h1
 {
     text-align: center;
-    font-size: 45px;
+    font-size: 80px;
 }
 
 .Discount h6
 {
     text-align: center;
+    font-size: 45px;
 }
 
 .Discount button
 {
     background-color: white;
-    font-size: 80px;
+    font-size: 150px;
     width: min-content;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.Couverts img
+section.Couverts
 {
-    width: 100%;
+    height: 100vh;
+    background-image: url("../img/Couverts.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Citation
@@ -260,8 +296,63 @@ header h1
     background-position: top;
     background-size: cover;
     min-height: 100vh;
+}
+.PlanAdresse
+{
+    background-color: black;
+    opacity: 0.5;
+    min-height: 100vh;
+    width: 35%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-bottom: 50px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Plan h2
+{
+    font-size: 50px;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+.Plan p
+{
+    color: white;
+    align-items: center;
+    display: flex;
+}
+footer
+{
+    background-color: rgb(118, 109, 74);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+footer h4
+{
+    font-size: 50px;
+    color: white;
+}
+footer p
+{
+    color: white;
+    font-size: 30px;
+}
+
+footer nav
+{
+    color: white;
+    font-size: 30px;
+}
+
+.AboutNav
+{
+    display: flex;
+    flex-direction: column;
+}
+.AboutGauche
+{
+    display: flex;
+    flex-direction: column;
 }
