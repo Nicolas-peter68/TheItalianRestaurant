@@ -61,6 +61,9 @@ table {
     position: relative;
     align-content: center;
     padding: 20px;
+    font-family: "avenirltstd-book";
+    position: fixed;
+    z-index: 1000;
 }
 
 .TopBar img 
@@ -109,6 +112,7 @@ header h1
     position: left;
     flex: auto;
     padding-left: 50px;
+    font-family: "anticdidone-regular", serif;
 }
 
 header button /*Bouton Book now*/
@@ -122,9 +126,12 @@ header button /*Bouton Book now*/
     padding: 5px;
     font-size: 32px;
     color: white;
+    font-family: "avenirltstd-light",sans-serif;
+    margin-right: 5%;
 }
 header h1
 {
+    font-family: "nunito-regular";
     font-size: 90px;
 }
 .AboutUs
@@ -156,6 +163,7 @@ header h1
     width: 50%;
     margin-right: auto;
     margin-left: auto;
+    font-family: "avenirltstd-light", serif;
 }
 .ContactUs
 {
@@ -169,12 +177,14 @@ header h1
 .ContactUs button /*Bouton Contact Us!*/
 {
     background-color: rgb(206, 151, 68);
-    border: solid 1px;
     background-size: cover;
     text-align: center;
     padding: 5px;
     width: max-content;
     font-size: 30px;
+    font-family: "avenirltstd-medium";
+    color: white;
+
 }
 .ContactUs-Text
 {
@@ -183,6 +193,7 @@ header h1
     justify-content: space-around;
     font-size: 35px;
     margin-left: 30px;
+    font-family: "avenirltstd-light";
 }
 
 .ContactUs img
@@ -193,40 +204,49 @@ header h1
 .ContactUs h2
 {
     font-size: 45px;
+    font-family: "anticdidone";
 }
 
 .GoldenDishes
 {
     background-color: rgb(206, 151, 68);
     min-height: 100vh;
-    margin-right: auto;
-    margin-left: auto;
-    margin: auto;
+    position: relative;
+    width: 100%;
 }
 
 .GoldenDishes h2
 {
     text-align: center;
     font-size: 60px;
+    padding-bottom: 60px;
+    font-family: "anticdidone";
 }
 
 .PetitsPlats
 {
-    display: flex;
     align-items: center;
     justify-content: space-around;
     display: flex;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+}
+.center-dishes
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
 }
 
-.TextePetitPlats
+.PetitsPlats p
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-size: 35px;
+    font-size: 30px;
+    font-family: "avenirltstd-light";
 }
 
 .Discount
@@ -235,23 +255,37 @@ header h1
     background-image: url("../img/Salade.png");
     background-position: 140%;
     background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.discount-center
+{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    padding-left: 140px;
 }
 
 .Discount h1
 {
     text-align: center;
     font-size: 80px;
+    font-family: "anticdidone";
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 150px;
 }
 
 .Discount h6
 {
     text-align: center;
     font-size: 45px;
+    font-family: "avenirltstd-light";
+    color: white;
+    padding-bottom: 100px;
 }
 
 .Discount button
@@ -259,9 +293,10 @@ header h1
     background-color: white;
     font-size: 150px;
     width: min-content;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
     border-radius: 20px;
+    font-family: "avenirltstd-heavy";
 }
 
 section.Couverts
@@ -285,6 +320,7 @@ section.Couverts
     font-size: 60px;
     min-height: 100vh;
     color: white;
+    font-family: "avenirltstd-light";
 }
 .Plan
 {
@@ -316,14 +352,17 @@ section.Couverts
 
 .Plan h2
 {
-    font-size: 80px;
+    font-size: 85px;
     color: white;
     padding-bottom: 20px;
+    font-family: "avenirltstd-heavy";
 }
 .Plan p
 {
     color: white;
     font-size: 30px;
+    padding: 40px;
+    font-family: "avenirltstd-light";
 }
 .BarreHaut
 {
@@ -358,16 +397,19 @@ footer
     min-height: 100vh;
     width: 80%;
     margin: 0 auto;
+    font-family: "avenirltstd-light";
 }
 footer h4
 {
     font-size: 50px;
     color: white;
+    font-family: "avenirltstd-heavy";
 }
 footer p
 {
     color: white;
     font-size: 30px;
+    font-family: "avenirltstd-light";
 }
 
 footer nav

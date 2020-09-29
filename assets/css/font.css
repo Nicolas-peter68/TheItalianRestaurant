@@ -1,8 +1,32 @@
 @font-face
 {
-    font-family: anticdidone;
+    font-family: "avenirltstd-light";
+    src: url(../fonts/AvenirLTStd-Light.otf);
+}
+@font-face
+{
+    font-family: "anticdidone";
     src: url(../fonts/AnticDidone-Regular.ttf);
-    font-family: avenir;
-    src: url(../fonts/AvenirLTStd-Light.otf
-    
+}
+
+@font-face
+{
+    font-family: "avenirltstd-book";
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face
+{
+    font-family: "nunito-regular";
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+@font-face
+{
+    font-family: "avenirltstd-medium";
+    src: url(../fonts/AvenirLTStd-Medium.otf);
+}
+@font-face
+{
+    font-family: "avenirltstd-heavy";
+    src: url(../fonts/AvenirLTStd-Heavy.otf);
 }
