@@ -1,19 +1,149 @@
-@media screen and (min-width : 750px)
+@media screen and (max-width : 1280px)
 {
 
     header
-    {  
-        background-image: linear-gradient(to top, transparent, rgb(0, 0, 0)), url(/assets/img/TableBois.png);
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        min-height: 100vh;
+    {   
         display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding-bottom: 50px;
-        position: relative;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 12rem;
+    }
+
+    header h1
+    {
+        font-size: 4rem;
+        padding-left: 0;
+    }
+
+    header button
+    {
+        margin-bottom: 5%;
+        margin-right: 0;
     }
     
+    .AboutUs p
+    {
+        width: 100%;
+    }
+
+    .ContactUs
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-flow: column;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .ContactUs h2
+    {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .ContactUs p
+    {
+        font-size: 25px;
+    }
+
+    .ContactUs img
+    {
+        width: 75%;
+    }
+    .ContactUs-Text
+    {
+        width: 100%;
+        margin-left:0;
+        text-align: justify;
+    }
+    section.GoldenDishes
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 150vh;
+    }
+
+    .center-dishes
+    {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-height: 100vh;
+        height: min-content;
+    }
+
+    .GoldenDishes img
+    {
+        width: 50%;
+    }
+
+    .discount-center
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .discount-center button
+    {
+        width: 80%;
+        text-align: center;
+        padding: 0;
+        font-size: 100px;
+    }
+
+    .Citation
+    {
+        text-align: center;
+    }
+
+    .PlanAdresse
+    {
+        width: 100%;
+    }
+
+    .adresse
+    {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutGauche
+    {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .AboutNav
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 768px)
+
+{
+    .center-dishes
+    {
+        display: flex;
+        align-items: center;
+        
+    }
+    .GoldenDishes img
+    {
+        width: 50%;
+    }
 }
