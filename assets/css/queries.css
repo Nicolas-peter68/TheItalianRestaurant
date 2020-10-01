@@ -83,7 +83,7 @@
 
     .GoldenDishes img
     {
-        width: 50%;
+        width: 75%;
     }
 
     .discount-center
@@ -126,24 +126,43 @@
         width: 100%;
         text-align: justify;
     }
-
     .AboutNav
     {
         width: 50%;
     }
 }
-
-@media screen and (max-width : 768px)
-
+@media screen and (max-width : 700px)
 {
     .center-dishes
     {
         display: flex;
         align-items: center;
-        
+        flex-flow: column;
     }
     .GoldenDishes img
     {
         width: 50%;
+    }
+    footer p
+    {
+        font-size: 20px;
+    }
+    footer h4
+    {
+        font-size: 25px;
+    }
+    footer li
+    {
+        font-size: 15px;
+    }
+    .reseaux-sociaux
+    {
+        display: flex;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+    .reseaux-sociaux a
+    {
+        font-size: 40px;
     }
 }
