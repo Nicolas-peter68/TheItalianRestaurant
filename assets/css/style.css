@@ -51,25 +51,14 @@ table {
 {
     box-sizing: border-box;
 }
-/* Navigation en haut*/
-.TopBar
-{
-    background-color: rgb(118, 109, 74);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    align-content: center;
-    padding: 20px;
-    font-family: "avenirltstd-book";
-    position: fixed;
-    z-index: 1000;
-}
 
-.TopBar img 
+.olive
 {
-    margin: auto;
+    position: relative;
+    left: 0;
     width: 300px;
+    margin: 20px;
+    margin-left: 50px;
 }
 
 .TopBar ul
@@ -87,9 +76,38 @@ table {
     font-size: 20px;
 }
 
+  .topnav {
+    background-color: rgb(118, 109, 74);
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .topnav a {
+    float: right;
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-family: "avenirltstd-book";
+    font-size: 35px;
+    margin-top: 35px;
+  }
+
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
 header
 {  
-    background-image: linear-gradient(to top, transparent, rgb(0, 0, 0)), url(/assets/img/TableBois.png);
+    background-image: linear-gradient(to top, transparent, rgb(0, 0, 0)), url(../img/TableBois.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -244,10 +262,15 @@ section.GoldenDishes
     width: 100%;
 }
 
+.PetitsPlats img{
+    padding-bottom: 20px;
+}
+
 .PetitsPlats p
 {
     font-size: 30px;
     font-family: "avenirltstd-light";
+    padding-bottom: 20px;
 }
 
 .Discount
@@ -364,6 +387,7 @@ section.Couverts
     font-size: 30px;
     padding: 40px;
     font-family: "avenirltstd-light";
+    text-align: center;
 }
 .BarreHaut
 {
